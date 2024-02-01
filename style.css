@@ -1,0 +1,76 @@
+body{
+    background-color:rgb(114, 48, 175);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+.todo-app{
+    max-width: 500px;
+    background-color:white;
+    margin: 120px auto 15px;
+    padding: 20px 30px 50px;
+    border-radius: 20px;
+}
+.todo-app h1{
+    text-align: center;
+
+}
+.form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+input[type="text"]{
+width: 70%;
+    padding: 20px;
+    border: 3px solid #632fff;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-left: 20px;
+
+}
+.btn{
+    background-color:#632fff;
+    border: none;
+    color: white;
+    padding: 20px 30px ;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+.btn:hover{
+    color:gold;
+}
+ul li{
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding: 10px 6px 10px 30px;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+
+    content: "✅";
+    font-size: 25px;
+    position: absolute;
+    left:-1px;
+    top:4px;
+}
+.task-list{
+    padding: 0px 30px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: #632fff;
+}
+ul li :checked::before{
+    content: "";
+}
+ul li span{
+    position: absolute;
+    top:1.8px;
+    right: 5px;
+    color:rgb(227,120,26);
+    font-size: 1.5rem;
+}
