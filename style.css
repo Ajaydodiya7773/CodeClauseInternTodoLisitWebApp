@@ -1,76 +1,96 @@
-body{
-    background-color:rgb(114, 48, 175);
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.todo-app{
-    max-width: 500px;
-    background-color:white;
-    margin: 120px auto 15px;
-    padding: 20px 30px 50px;
-    border-radius: 20px;
+
+header, footer, section {
+    padding: 40px;
 }
-.todo-app h1{
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
     text-align: center;
+}
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
-.form{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
-}
-input[type="text"]{
-width: 70%;
-    padding: 20px;
-    border: 3px solid #632fff;
-    border-radius: 15px;
-    font-size: 1rem;
-    margin-left: 20px;
 
-}
-.btn{
-    background-color:#632fff;
-    border: none;
-    color: white;
-    padding: 20px 30px ;
-    cursor: pointer;
-    border-radius: 15px;
-    font-size: 1.5rem;
-}
-.btn:hover{
-    color:gold;
-}
-ul li{
+nav ul {
     list-style-type: none;
-    font-size: 1.1rem;
-    padding: 10px 6px 10px 30px;
-    cursor: pointer;
-    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-ul li::before{
 
-    content: "✅";
-    font-size: 25px;
-    position: absolute;
-    left:-1px;
-    top:4px;
+nav li {
+    float: left;
 }
-.task-list{
-    padding: 0px 30px;
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-ul li.checked{
-    text-decoration: line-through;
-    color: #632fff;
+
+nav li a:hover {
+    background-color: #111;
 }
-ul li :checked::before{
-    content: "";
+
+section {
+    text-align: center;
 }
-ul li span{
-    position: absolute;
-    top:1.8px;
-    right: 5px;
-    color:rgb(227,120,26);
-    font-size: 1.5rem;
+
+#features, #testimonials {
+    background-color: #f2f2f2;
+}
+
+#cta {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4CAF50;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
 }
